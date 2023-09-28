@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Fetch y peticiones</title>
+        <script async defer src='./main.js'></script>
+        <script async defer src='./fetch.js'></script>
+        <link rel='stylesheet' href='./styles.css'>
+    </head>
+    <body>
+        <!-- <button id='btn-counter'>Counter ++</button>
+        <p id='counter'></p> -->
+
+        <div class='container'>
+            <div class='card--container'>
+            </div>
+            <div>
+                <img id="pfp" />
+            </div>
+            <div class="container row">
+                <label for="poke-name">Pokemon (Name / ID)</label>
+                <h1 id="poke-name"></h1>
+                <!-- <input id='poke-name' type="text" name="poke-name" value=""> -->
+                <input id="pokemon-name" type="text">
+
+            </div>
+            <div class='container row'>
+               <button id='previous-btn' onclick="loadPrevious ()" class='btn primary'>Previous</button> 
+               <button id='get-btn' onclick="search()" class='btn primary'>Get Pokemon</button> 
+               <button id='next-btn' onclick="loadNext ()" class='btn primary'>Next</button> 
+            </div>
+        </div>
+    </body>
+</html>
